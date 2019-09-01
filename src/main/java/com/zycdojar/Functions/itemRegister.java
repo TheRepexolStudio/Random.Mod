@@ -15,6 +15,7 @@ public class itemRegister {
     public static ErrorIngot ei = new ErrorIngot("erroringot");
     @SubscribeEvent
     public static void onItemReg(RegistryEvent.Register<Item> event){
-        event.getRegistry().register(ei);
+        event.getRegistry().registerAll(Reference.RegisterStack.toArray(new Item[0]));
+        //event.getRegistry().register(ei);
     }
 }

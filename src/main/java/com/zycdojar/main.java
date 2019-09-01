@@ -22,18 +22,18 @@ public class main {
     public static Common proxy;
     public static Logger log;
     @EventHandler
-    public static void preInit(FMLPreInitializationEvent event){
-        log.info("Execute1");
-        log=event.getModLog();
+    public void preInit(FMLPreInitializationEvent event){
+        //log.info("Execute1");
+        //log=event.getModLog();
         proxy.preInit(event);
     }
     @EventHandler
-    public static void init(FMLInitializationEvent event){
-        log.info("Execute2");
+    public void init(FMLInitializationEvent event){
+        //log.info("Execute2");
         proxy.init(event);
     }
     @EventHandler
-    public static void postInit(FMLPostInitializationEvent event){
+    public void postInit(FMLPostInitializationEvent event){
         proxy.postInit(event);
     }
 }
