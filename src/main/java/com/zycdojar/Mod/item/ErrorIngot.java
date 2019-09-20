@@ -1,5 +1,6 @@
 package com.zycdojar.Mod.item;
 
+import com.zycdojar.Functions.Reference;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
@@ -11,5 +12,6 @@ public class ErrorIngot extends Item {
         setUnlocalizedName(name);
         setRegistryName(name);
         setCreativeTab(CreativeTabs.MATERIALS);
+        Reference.RegisterStack.add(this);
     }
 }
